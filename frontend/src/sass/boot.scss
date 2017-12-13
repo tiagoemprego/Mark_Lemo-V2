@@ -45,7 +45,8 @@ table {
 
 // classes padrão do layout
 .interface{
-	width: 954px;
+	width: 100%;
+	max-width: 954px;
 	margin: 0 auto;
 	box-sizing:border-box;
 	

@@ -1,7 +1,6 @@
 .header{
 	width: 100%;
 	height: 90px;
-	background: #069;
 
 	.mark-logo{
 		width: 250px;
@@ -19,6 +18,19 @@
 			}
 			h3{
 				font-size: 14px;
+			}
+		}
+	}
+	// icons do menu
+	.menu{
+		ul{
+			width: 50%;
+			float: right;
+			li{
+				float: left;
+				width: 20%;
+				text-align: center;
+				padding: 8px;
 			}
 		}
 	}
