@@ -4,6 +4,7 @@ var sass = require('gulp-sass');
 var imagemin = require('gulp-imagemin');
 var changed  = require('gulp-changed');
 var rename  = require('gulp-rename');
+var htmlmin = require('gulp-htmlmin');
 
 gulp.task('teste', function(){ 
     console.log('funcionou!'); 
@@ -18,9 +19,10 @@ gulp.task('sass', function () {
 });
 
 // html
-gulp.task('html', function(){
-	gulp.src('.src/*.html')
-	.pipe(gulp.dest('../dist/html'));
+gulp.task('minify', function() {
+  return gulp.src('src/*.html')
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest('../dist'));
 });
 // Image-min 
 gulp.task('jpg', function() {
@@ -33,9 +35,10 @@ gulp.task('jpg', function() {
 });
 
 // Run dev
-gulp.task('run', ['sass', 'teste', 'jpg']);
+gulp.task('run', ['sass', 'minify', 'jpg']);
 
 // Gulp Watch
 gulp.task('watch', ['run'], function () { 
     gulp.watch('./src/sass/**/*.scss', ['sass']);
+    gulp.watch('./src/*.html', ['minify']);
 });
