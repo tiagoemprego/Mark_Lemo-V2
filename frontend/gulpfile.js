@@ -33,9 +33,17 @@ gulp.task('jpg', function() {
         }))
         .pipe(gulp.dest('../dist/img/'));
 });
+gulp.task('png', function() {
+    gulp.src('./src/img/**/*.png')
+        .pipe(changed('../dist/img/'))
+        .pipe(imagemin({
+            progressive: true
+        }))
+        .pipe(gulp.dest('../dist/img/'));
+});
 
 // Run dev
-gulp.task('run', ['sass', 'minify', 'jpg']);
+gulp.task('run', ['sass', 'minify', 'jpg', 'png']);
 
 // Gulp Watch
 gulp.task('watch', ['run'], function () { 
