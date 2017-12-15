@@ -34,6 +34,9 @@
 		padding: 14px 0;
 		background-color: #1bbc9b;
 		margin-bottom: 40px;
+		&:hover{
+			background-color: #16a086;
+		}
 		a{
 			text-decoration: none;
 			color: #ffffff;

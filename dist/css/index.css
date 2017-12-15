@@ -65,9 +65,11 @@ table {
       float: left;
       padding: 6px 12px; }
       .header .mark-logo .name-logo h1 {
-        font-size: 20px; }
+        font-size: 20px;
+        color: #757373; }
       .header .mark-logo .name-logo h3 {
-        font-size: 14px; }
+        font-size: 14px;
+        color: #756f6f; }
   .header .menu ul {
     width: 50%;
     float: right;
@@ -80,10 +82,14 @@ table {
       height: 36;
       text-align: center;
       padding: 10px 0px; }
+      .header .menu ul li:hover {
+        background-color: #16a086; }
+      .header .menu ul li:hover a {
+        color: #ffffff; }
       .header .menu ul li a {
         text-transform: uppercase;
         text-decoration: none;
-        color: #000000; }
+        color: #756f6f; }
 
 .highligth {
   width: 100%;
@@ -109,16 +115,54 @@ table {
     margin: 0 auto; }
     .highligth .highligth-p p {
       font-size: 22px;
-      font-weight: 300; }
+      font-weight: 300;
+      text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); }
   .highligth .highligth-btn {
     width: 117px;
     margin: 0 auto;
     padding: 14px 0;
     background-color: #1bbc9b;
     margin-bottom: 40px; }
+    .highligth .highligth-btn:hover {
+      background-color: #16a086; }
     .highligth .highligth-btn a {
       text-decoration: none;
       color: #ffffff;
       font-size: 18px; }
   .highligth .highligth-btn-plus {
     cursor: pointer; }
+
+.portfolio {
+  font-family: sans-serif;
+  text-align: center; }
+  .portfolio .portfolio-h2 {
+    padding: 50px 0 15px 0; }
+    .portfolio .portfolio-h2 h2 {
+      font-size: 25px;
+      font-weight: 400;
+      color: #756f6f; }
+  .portfolio .portfolio-p {
+    margin-bottom: 34px; }
+    .portfolio .portfolio-p p {
+      color: #756f6f; }
+  .portfolio .portfolio-select ul {
+    text-align: center; }
+    .portfolio .portfolio-select ul li {
+      display: inline-block;
+      background-color: #1bbc9b;
+      padding: 12px 11px;
+      margin-right: 13px;
+      text-transform: uppercase;
+      color: #ffffff;
+      font-size: 16px;
+      cursor: pointer; }
+      .portfolio .portfolio-select ul li:hover {
+        background-color: #16a086; }
+    .portfolio .portfolio-select ul li:last-of-type {
+      margin-right: 0px; }
+
+@media screen and (max-width: 800px) {
+  .portfolio-select ul li {
+    display: block !important;
+    width: 40%;
+    margin: 10px auto !important; } }

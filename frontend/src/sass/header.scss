@@ -15,9 +15,11 @@
 			padding: 6px 12px;
 			h1{
 				font-size: 20px;
+				color: #757373;
 			}
 			h3{
 				font-size: 14px;
+				color: #756f6f;
 			}
 		}
 	}
@@ -35,10 +37,16 @@
 				height: 36;
 				text-align: center;
 				padding: 10px 0px;
+				&:hover{
+					background-color: #16a086;
+				}
+				&:hover a{
+					color: #ffffff;
+				}
 				a{
 					text-transform: uppercase;
 					text-decoration: none;
-					color: #000000;
+					color: #756f6f;
 				}
 			}
 		}

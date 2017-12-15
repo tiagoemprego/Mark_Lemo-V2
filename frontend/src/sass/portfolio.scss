@@ -1,0 +1,39 @@
+.portfolio{
+	font-family: sans-serif;
+	text-align: center;
+	.portfolio-h2{
+		padding: 50px 0 15px 0;
+		h2{
+			font-size: 25px;
+			font-weight: 400;
+			color: #756f6f;
+		}
+	}
+	.portfolio-p{
+			margin-bottom: 34px;
+			p{
+				color: #756f6f;
+			}
+		}
+	.portfolio-select{
+		ul{
+			text-align: center;
+			li{
+				display: inline-block;
+				background-color: #1bbc9b;
+				padding: 12px 11px;
+				margin-right: 13px;
+				text-transform: uppercase;
+				color: #ffffff;
+				font-size: 16px;
+				cursor: pointer;
+				&:hover{
+				background-color: #16a086;
+			}
+			}
+			li:last-of-type{
+				margin-right: 0px;
+			}
+		}
+	}
+}

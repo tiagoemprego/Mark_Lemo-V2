@@ -1,0 +1,11 @@
+@media screen and (max-width: 800px) {
+    .portfolio-select{
+		ul{
+			li{
+				display: block !important;
+				width: 40%;
+				margin: 10px auto !important;
+			}
+		}
+	}
+}
