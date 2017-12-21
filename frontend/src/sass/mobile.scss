@@ -1,11 +1,64 @@
 @media screen and (max-width: 800px) {
-    .portfolio-select{
-		ul{
-			li{
-				display: block !important;
-				width: 40%;
-				margin: 10px auto !important;
-			}
-		}
-	}
+    .header{
+        .menu{
+            ul{
+                width: 100%;
+                background-color: #1abc9b;
+                position: absolute;
+                top: 0px;z-index: 0;
+                padding-top: 0px;
+                transition: .5s;
+                height: 0px;
+                overflow: hidden;
+                li{
+                    float: none;
+                    margin: 0 auto;
+                    width: auto;
+                    padding: 18px 0;
+                    transition: 1s;
+                    a{
+                        color: #ffffff;
+                        font-size: 25px;
+                    }
+                }
+            }
+        }
+        .mark-logo{
+            margin-left: 20px;
+        }
+        //menu mobile ---------------------------------------------------------
+        .hamburger-menu{
+            display: block;
+        }
+        .m-menu-hide{
+            padding-top: 90px !important;
+            height: 500px !important;
+
+        }
+        //fim menu mobile -----------------------------------------------------
+    }
+    .portfolio{
+        .portfolio-select{
+    		ul{
+    			li{
+    				display: block;
+    				width: 40%;
+    				margin: 10px auto;
+    			}
+                li:last-of-type{
+    				margin-right: auto;
+    			}
+    		}
+    	}
+    }
+}
+@media screen and (max-width: 330px){
+    .header{
+        .mark-logo{
+            display: none;
+        }
+        .hamburger-menu{
+            right: calc(50% - 31px);
+        }
+    }
 }

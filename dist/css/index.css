@@ -90,6 +90,55 @@ table {
         text-transform: uppercase;
         text-decoration: none;
         color: #756f6f; }
+  .header .hamburger-menu {
+    z-index: 1;
+    height: 62px;
+    display: block;
+    right: 20px;
+    top: 10px;
+    position: absolute;
+    display: none; }
+    .header .hamburger-menu input[type="checkbox"] {
+      display: none; }
+    .header .hamburger-menu input[type="checkbox"]:checked ~ .container > ul {
+      display: none; }
+    .header .hamburger-menu input[type="checkbox"]:checked ~ .container > .menu-mobile {
+      background: transparent; }
+    .header .hamburger-menu input[type="checkbox"]:checked ~ .container > .menu-mobile::before {
+      bottom: 0;
+      transform: rotate(45deg); }
+    .header .hamburger-menu input[type="checkbox"]:checked ~ .container > .menu-mobile::after {
+      top: 0;
+      transform: rotate(-45deg); }
+    .header .hamburger-menu .menu-mobile {
+      height: 8px;
+      width: 50px;
+      background: #000000;
+      transition: 0.3s;
+      position: relative;
+      transform: translateY(33.33333px); }
+      .header .hamburger-menu .menu-mobile::before {
+        height: 8px;
+        width: 50px;
+        background: #000000;
+        transition: 0.3s;
+        position: absolute;
+        content: "";
+        bottom: 20px; }
+      .header .hamburger-menu .menu-mobile::after {
+        height: 8px;
+        width: 50px;
+        background: #000000;
+        transition: 0.3s;
+        position: absolute;
+        content: "";
+        top: 20px; }
+    .header .hamburger-menu .menu-mobile-opem {
+      background: #ffffff; }
+      .header .hamburger-menu .menu-mobile-opem::before {
+        background: #ffffff; }
+      .header .hamburger-menu .menu-mobile-opem::after {
+        background: #ffffff; }
 
 .highligth {
   width: 100%;
@@ -160,9 +209,84 @@ table {
         background-color: #16a086; }
     .portfolio .portfolio-select ul li:last-of-type {
       margin-right: 0px; }
+  .portfolio .portfolio-list {
+    width: 100%; }
+    .portfolio .portfolio-list .portfolio-list-icons {
+      padding: 40px 37px;
+      width: 163px;
+      height: 173px;
+      display: inline-block;
+      transition: .3s; }
 
 @media screen and (max-width: 800px) {
-  .portfolio-select ul li {
-    display: block !important;
+  .header .menu ul {
+    width: 100%;
+    background-color: #1abc9b;
+    position: absolute;
+    top: 0px;
+    z-index: 0;
+    padding-top: 0px;
+    transition: .5s;
+    height: 0px;
+    overflow: hidden; }
+    .header .menu ul li {
+      float: none;
+      margin: 0 auto;
+      width: auto;
+      padding: 18px 0;
+      transition: 1s; }
+      .header .menu ul li a {
+        color: #ffffff;
+        font-size: 25px; }
+  .header .mark-logo {
+    margin-left: 20px; }
+  .header .hamburger-menu {
+    display: block; }
+  .header .m-menu-hide {
+    padding-top: 90px !important;
+    height: 500px !important; }
+  .portfolio .portfolio-select ul li {
+    display: block;
     width: 40%;
-    margin: 10px auto !important; } }
+    margin: 10px auto; }
+  .portfolio .portfolio-select ul li:last-of-type {
+    margin-right: auto; } }
+
+@media screen and (max-width: 330px) {
+  .header .mark-logo {
+    display: none; }
+  .header .hamburger-menu {
+    right: calc(50% - 31px); } }
+
+.about {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #16a086; }
+  .about .about-h2 {
+    padding: 50px 0 15px 0; }
+    .about .about-h2 h2 {
+      font-size: 25px;
+      font-weight: 400;
+      color: #ffffff; }
+  .about .about-p p {
+    color: #ffffff; }
+  .about .about-person-col {
+    padding: 30px;
+    width: 100%;
+    max-width: 208px;
+    display: inline-block;
+    position: relative; }
+    .about .about-person-col .about-person-details {
+      background: #ffffff;
+      color: #756f6f; }
+      .about .about-person-col .about-person-details h3 {
+        padding-top: 20px;
+        padding-bottom: 8px;
+        line-height: 10px;
+        font-size: 25px; }
+      .about .about-person-col .about-person-details h4 {
+        font-size: 15px;
+        font-style: italic; }
+      .about .about-person-col .about-person-details p {
+        text-align: left;
+        padding: 20px 9px; }

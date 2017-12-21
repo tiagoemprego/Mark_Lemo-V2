@@ -13,8 +13,10 @@
     "gulp-compass": "^2.1.0",
     "gulp-htmlmin": "^3.0.0",
     "gulp-imagemin": "^4.0.0",
+    "gulp-jshint": "^2.0.4",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
+    "jshint": "^2.9.5",
     "rename": "^1.0.4"
   },
   "scripts": {

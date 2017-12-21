@@ -1,0 +1,45 @@
+.about{
+    font-family: sans-serif;
+	text-align: center;
+    background-color: #16a086;
+    .about-h2{
+        padding: 50px 0 15px 0;
+        h2{
+            font-size: 25px;
+            font-weight: 400;
+            color: #ffffff;
+        }
+    }
+    .about-p{
+        // margin-bottom: 34px;
+        p{
+            color: #ffffff;
+        }
+    }
+    .about-person-col{
+        padding: 30px;
+        width: 100%;
+        max-width: 208px;
+        display: inline-block;
+        position: relative;
+
+        .about-person-details{
+            background: #ffffff;
+            color: #756f6f;
+            h3{
+                padding-top: 20px;
+                padding-bottom: 8px;
+                line-height: 10px;
+                font-size: 25px;
+            }
+            h4{
+                font-size: 15px;
+                font-style: italic
+            }
+            p{
+                text-align: left;
+                padding: 20px 9px;
+            }
+        }
+    }
+}

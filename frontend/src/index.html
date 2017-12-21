@@ -2,15 +2,25 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="robots" content="Follow" />
+	<meta name="author" content="Tiago Marques">
+	<meta name="description" content="Site Pessoal">
+  	<meta name="keywords" content="HTML,CSS,JavaScript">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="copyright" content="© 2018 TiagoMarques" />
+	<meta name="keywords" content="desenvolvimento web,sites,programacao,criacao,web," />
+	<meta name="description" content="trabalho na área de desenvolvimento Web, e aqui mostro um pouco de meu trabalho." />
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>We Build Brand</title>
 	<link rel="stylesheet" href="css/index.css">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
 	<header>
 		<div class="interface">
 			<div class="header">
+				
 				<div class="mark-logo">
 					<div class="logo">
 						<img src="img/logo.jpg" alt="logo">
@@ -22,8 +32,18 @@
 				</div>
 				<!-- menu -->
 				<div class="menu">
+					<!-- menu-mobile -->
+					<div class="hamburger-menu">
+						<label for="hamburger">
+							<input type="checkbox" id="hamburger"/>
+							<div class="container">
+							<div class="menu-mobile"></div>
+							</div>
+						</label>
+					</div>
+					<!-- Fim menu-mobile -->
 					<nav>
-						<ul>
+						<ul class="menu-mobile-toglle">
 							<li><a href="">Home</a></li>
 							<li><a href="">Portifolio</a></li>
 							<li><a href="">About</a></li>
@@ -34,7 +54,7 @@
 			</div>
 		</div>
 	</header>
-	<section class="highligth">
+	<section id="section-highligth" class="highligth">
 		<div class="interface">
 			<div class="highligth-h1">
 			<h1>We Build <span>Brand</span></h1>
@@ -46,18 +66,18 @@
 				<a  href="#" alt="LEAN MORE">Lean More</a>
 			</div>
 			<div class="highligth-btn-plus">
-				<img src="img/plus.png" alt="plus">
+				<img id="btn-plus" src="img/plus.png" alt="plus">
 			</div>
 		</div>
 	</section>
-	<section class="portfolio">
+	<section id="section-portfolio" class="portfolio">
 		<div class="interface">
 			<div class="portfolio-h2">
 			<h2>Portfolio</h2>
 			</div>
 			<div class="portfolio-p">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-			</div>	
+			</div>
 			<div class="portfolio-select">
 				<ul>
 					<li>All</li>
@@ -66,7 +86,61 @@
 					<li>Flat design</li>
 				</ul>
 			</div>
+			<div class="portfolio-list">
+				<div class="portfolio-list-icons">
+					<img src="img/portfolio-1.jpg" alt="">
+				</div>
+				<div class="portfolio-list-icons">
+					<img src="img/portfolio-2.jpg" alt="">
+				</div>
+				<div class="portfolio-list-icons">
+					<img src="img/portfolio-3.jpg" alt="">
+				</div>
+				<div class="portfolio-list-icons">
+					<img src="img/portfolio-4.jpg" alt="">
+				</div>
+				<div class="portfolio-list-icons">
+					<img src="img/portfolio-5.jpg" alt="">
+				</div>
+				<div class="portfolio-list-icons">
+					<img src="img/portfolio-6.jpg" alt="">
+				</div>
+				<div class="portfolio-list-icons">
+					<img src="img/portfolio-7.jpg" alt="">
+				</div>
+				<div class="portfolio-list-icons">
+					<img src="img/portfolio-8.jpg" alt="">
+				</div>
+			</div>
 		</div>
 	</section>
+	<section id="section-about" class="about">
+		<div class="about-h2">
+		<h2>About Us</h2>
+		</div>
+		<div class="about-p">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		</div>
+		<div class="about-person">
+			<div class="about-person-col">
+				<div class="about-person-img">
+					<img src="img/about-us-1.jpg" alt="">
+				</div>
+				<div class="about-person-details">
+					<h3>Milanie Doe</h3>
+					<h4>Project Manager</h4>
+					<p>
+						Ut wisi ad minim veniam,
+						quis nostrud exerci tation
+						ullarcorper suscipit lobortis nisl
+						ut aliquip ex ea commodo
+						consequat
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
 </body>
 </html>
