@@ -23,6 +23,22 @@
         display: inline-block;
         position: relative;
 
+        .about-person-img{
+            height: 216px;
+            overflow: hidden;
+            cursor: pointer;
+
+            .about-social{
+                position: absolute;
+                top: 130px;
+                left: calc(50% - 60px);
+
+                a{
+                    padding: 0 5px;
+                }
+            }
+        }
+
         .about-person-details{
             background: #ffffff;
             color: #756f6f;

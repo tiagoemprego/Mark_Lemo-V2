@@ -276,6 +276,16 @@ table {
     max-width: 208px;
     display: inline-block;
     position: relative; }
+    .about .about-person-col .about-person-img {
+      height: 216px;
+      overflow: hidden;
+      cursor: pointer; }
+      .about .about-person-col .about-person-img .about-social {
+        position: absolute;
+        top: 130px;
+        left: calc(50% - 60px); }
+        .about .about-person-col .about-person-img .about-social a {
+          padding: 0 5px; }
     .about .about-person-col .about-person-details {
       background: #ffffff;
       color: #756f6f; }
